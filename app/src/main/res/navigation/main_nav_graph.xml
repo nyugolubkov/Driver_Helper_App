@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.driverhelperapp.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_createContactFragment"
+            app:destination="@id/createContactFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_changeContactFragment"
+            app:destination="@id/changeContactFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_driverFragment"
+            app:destination="@id/driverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createContactFragment"
+        android:name="com.example.driverhelperapp.ui.contacts.CreateContactFragment"
+        android:label="fragment_create_contact"
+        tools:layout="@layout/fragment_create_contact" />
+    <fragment
+        android:id="@+id/changeContactFragment"
+        android:name="com.example.driverhelperapp.ui.contacts.ChangeContactFragment"
+        android:label="fragment_change_contact"
+        tools:layout="@layout/fragment_change_contact" />
+    <action android:id="@+id/action_global_mainFragment" app:destination="@id/mainFragment" />
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.example.driverhelperapp.ui.driver.DriverFragment"
+        android:label="fragment_driver"
+        tools:layout="@layout/fragment_driver" />
+</navigation>

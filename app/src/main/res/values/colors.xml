@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet">#6750A4</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_bg">#DFEEF6</color>
+    <color name="edit_hint">#6750A4</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="grey">#808080</color>
+    <color name="hyper_blue">#3366CC</color>
+    <color name="white_push">#EEEEEE</color>
+    <color name="max_time_back">#E7E0EC</color>
+    <color name="max_time_back_focus">#EADDFF</color>
+
+</resources>
